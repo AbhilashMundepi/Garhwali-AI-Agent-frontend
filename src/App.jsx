@@ -122,7 +122,7 @@ export default function App() {
           ) : (
             <>
               <FaLanguage size={20} />
-              <span>Translate</span>
+              <span className="text-white font-bold">Translate</span>
             </>
           )}
         </button>
