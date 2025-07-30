@@ -48,7 +48,7 @@ export default function App() {
     setLoading(true);
     setTranslation("");
     try {
-      const res = await fetch("https://garhwali-ai-backend.onrender.com", {
+      const res = await fetch("https://garhwali-ai-backend.onrender.com/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
