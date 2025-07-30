@@ -152,7 +152,7 @@ export default function App() {
         )}
       </div>
        <footer className="text-center text-white/70 mt-8">
-            <p>Built with ❤️ for the mountains</p>
+            <p>Built with ❤️ for the mountains By Abhilash Mundepi</p>
        </footer>
     </div>
   );
