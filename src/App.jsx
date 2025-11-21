@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from "react";
-// Import icons for a cleaner UI
+
 import { FaMicrophone, FaVolumeUp, FaCopy, FaLanguage } from 'react-icons/fa';
 
 export default function App() {
@@ -30,19 +30,18 @@ export default function App() {
     recognition.start();
   };
 
-  // 🔊 Speak the translated text
+  
   const speak = (textToSpeak) => {
     if (!window.speechSynthesis || !textToSpeak) return;
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
-    // You might need to find the correct voice for Garhwali if available
-    // For now, using Hindi as a placeholder
+  
     utterance.lang = "hi-IN";
     utterance.pitch = 1;
     utterance.rate = 0.9;
     window.speechSynthesis.speak(utterance);
   };
 
-  // ✨ Translate
+
   const translate = async () => {
     if (!text.trim()) return;
     setLoading(true);
@@ -63,7 +62,7 @@ export default function App() {
     setLoading(false);
   };
 
-  // ✍️ Typewriter effect for displaying the translation
+  
   const typeWriterEffect = (fullText) => {
     let index = 0;
     const interval = setInterval(() => {
@@ -75,7 +74,7 @@ export default function App() {
     }, 40); // Slightly faster typing
   };
 
-  // 📋 Copy to clipboard
+  //  Copy to clipboard
   const copyToClipboard = () => {
     navigator.clipboard.writeText(translation);
     alert("Translation copied to clipboard!");
