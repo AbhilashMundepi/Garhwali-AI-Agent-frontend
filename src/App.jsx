@@ -86,8 +86,11 @@ export default function App() {
 
         {/* --- Header --- */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-bold">Garhwali Guru AI</h1>
-          <p className="text-white/80 mt-1">Translate English/Hindi to Garhwali</p>
+          {/* <h1 className="text-3xl md:text-4xl font-bold">Garhwali Guru AI</h1> */}
+          <h1 className="text-3xl md:text-4xl font-bold">Hindi smart chatbot</h1>
+          {/* <p className="text-white/80 mt-1">Translate English/Hindi to Garhwali</p> */}
+           <p className="text-white/80 mt-1">Ask me anything ?</p>
+          
         </div>
 
         {/* --- Input Area --- */}
@@ -121,7 +124,8 @@ export default function App() {
           ) : (
             <>
               <FaLanguage size={20} />
-              <span className="text-white font-bold">Translate</span>
+              {/* <span className="text-white font-bold">Translate</span> */}
+              <span className="text-white font-bold">Ask questions</span>
             </>
           )}
         </button>
