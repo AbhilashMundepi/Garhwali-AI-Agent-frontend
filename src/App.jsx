@@ -133,7 +133,7 @@ export default function App() {
         {/* --- Translation Output --- */}
         {translation && (
           <div className="fade-in p-5 bg-black/40 rounded-lg space-y-4">
-            <h2 className="font-semibold text-lg text-yellow-300">Garhwali Translation:</h2>
+            {/* <h2 className="font-semibold text-lg text-yellow-300">Garhwali Translation:</h2> */}
             <p className="text-lg leading-relaxed">{translation}</p>
             <div className="flex gap-4 mt-2">
               <button
